@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  /* line-height: 1.5; */
+  color: #efeff1;
+  overflow: hidden;
+  background: url('./pictures/backgroundDark.png');
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.bg-main {
+  background-color: #26262b70;
+  border: #18181b solid 2px;
+  border-radius: 5px;
+  backdrop-filter: grayscale(0.5) opacity(0.8) blur(2px);
+}
+
+.bg-second {
+  background-color: #4646492c;
+  border: #18181b9f solid 2px;
+  border-radius: 5px;
+}

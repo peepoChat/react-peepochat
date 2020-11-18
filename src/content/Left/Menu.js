@@ -4,19 +4,12 @@ const styles = {
   menuPiece: {
     height: '85vh',
   },
-  menu: {
-    backgroundColor: '#26262b70',
-    borderStyle: 'solid',
-    borderColor: '#18181b',
-    borderWidth: '2px',
-    borderRadius: '5px',
-  },
 }
 
 export default function Menu() {
   return (
     <Accordion defaultActiveKey='0'>
-      <Card style={styles.menu}>
+      <Card className='bg-main'>
         <Card.Header className='row justify-content-around'>
           <Accordion.Toggle as={Button} variant='dark' eventKey='0'>
             <svg

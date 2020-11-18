@@ -1,16 +1,9 @@
 import { Col, Card } from 'react-bootstrap'
 
-const styles = {
-  body: {
-    backgroundColor: '#46464970',
-    alignItems: 'center',
-  },
-}
-
 export default function Character() {
   return (
     <Col xs={4} className='align-self-end'>
-      <Card style={styles.body} className='py-1'>
+      <Card className='py-1 bg-second align-items-center'>
         <Card.Img
           variant='top'
           style={{ width: '90%', transform: 'scale(-1, 1)' }}
