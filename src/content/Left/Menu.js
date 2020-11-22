@@ -1,10 +1,9 @@
 import { Card, Accordion, Button } from 'react-bootstrap'
-
-const styles = {
-  menuPiece: {
-    height: '85vh',
-  },
-}
+import Achievements from './Menu/Achievements'
+import Credits from './Menu/Credits'
+import Logs from './Menu/Logs'
+import Settings from './Menu/Settings'
+import Shop from './Menu/Shop'
 
 export default function Menu() {
   return (
@@ -81,19 +80,19 @@ export default function Menu() {
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey='0'>
-          <Card.Body style={styles.menuPiece}> </Card.Body>
+          <Settings />
         </Accordion.Collapse>
         <Accordion.Collapse eventKey='1'>
-          <Card.Body style={styles.menuPiece}></Card.Body>
+          <Shop />
         </Accordion.Collapse>
         <Accordion.Collapse eventKey='2'>
-          <Card.Body style={styles.menuPiece}></Card.Body>
+          <Achievements />
         </Accordion.Collapse>
         <Accordion.Collapse eventKey='3'>
-          <Card.Body style={styles.menuPiece}></Card.Body>
+          <Logs />
         </Accordion.Collapse>
         <Accordion.Collapse eventKey='4'>
-          <Card.Body style={styles.menuPiece}></Card.Body>
+          <Credits />
         </Accordion.Collapse>
       </Card>
     </Accordion>

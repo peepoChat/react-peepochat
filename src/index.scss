@@ -5,7 +5,14 @@ body {
   /* line-height: 1.5; */
   color: #efeff1;
   overflow: hidden;
+}
+
+.container-fluid.dark {
   background: url('./pictures/backgroundDark.png');
+}
+
+.container-fluid.light {
+  background: url('./pictures/backgroundLight.png');
 }
 
 ::-webkit-scrollbar {
@@ -22,5 +29,22 @@ body {
 .bg-second {
   background-color: #4646492c;
   border: #18181b9f solid 2px;
+  border-radius: 5px;
+}
+
+.menu-piece {
+  height: 85vh;
+}
+
+.container-fluid.light .bg-main {
+  background-color: #7a7a7a50;
+  border: #6868688f solid 2px;
+  border-radius: 5px;
+  backdrop-filter: grayscale(0.5) opacity(0.8) blur(2px);
+}
+
+.container-fluid.light .bg-second {
+  background-color: #4646492c;
+  border: #6868688f solid 2px;
   border-radius: 5px;
 }
