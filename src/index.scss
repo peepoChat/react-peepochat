@@ -1,5 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
+.btn:active,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   /* line-height: 1.5; */
@@ -57,4 +63,22 @@ a {
 
 a:hover {
   color: inherit;
+}
+
+.btn-second {
+  background-color: #4646492c;
+  color: #efeff1 !important;
+  border-radius: 5px;
+  backdrop-filter: grayscale(1) opacity(0.9) blur(10px);
+}
+
+.btn-second:hover {
+  color: #efeff1;
+}
+
+.btn-active {
+  background-color: #fdbc4296;
+  color: #efeff1 !important;
+  border-radius: 5px;
+  backdrop-filter: grayscale(1) opacity(0.9) blur(10px);
 }

@@ -7,14 +7,14 @@ import Logs from './Menu/Logs'
 import Settings from './Menu/Settings'
 import Shop from './Menu/Shop'
 
-function Menu({ themeValue, tabValue, changeTab }) {
+function Menu({ tabValue, changeTab }) {
   return (
     <Card className='bg-main'>
       <Card.Header className='row justify-content-around'>
-        <Button variant={themeValue === 'dark' ? 'dark' : 'info'} onClick={() => changeTab('settings')}>
+        <Button variant={tabValue === 'settings' ? 'active' : 'second'} onClick={() => changeTab('settings')}>
           <svg
-            width='1.5em'
-            height='1.5em'
+            width='1.8em'
+            height='1.8em'
             viewBox='0 0 16 16'
             className='bi bi-gear-fill'
             fill='currentColor'
@@ -25,10 +25,10 @@ function Menu({ themeValue, tabValue, changeTab }) {
             />
           </svg>
         </Button>
-        <Button variant={themeValue === 'dark' ? 'dark' : 'info'} onClick={() => changeTab('shop')}>
+        <Button variant={tabValue === 'shop' ? 'active' : 'second'} onClick={() => changeTab('shop')}>
           <svg
-            width='1.5em'
-            height='1.5em'
+            width='1.8em'
+            height='1.8em'
             viewBox='0 0 16 16'
             className='bi bi-basket2-fill'
             fill='currentColor'
@@ -39,10 +39,10 @@ function Menu({ themeValue, tabValue, changeTab }) {
             />
           </svg>
         </Button>
-        <Button variant={themeValue === 'dark' ? 'dark' : 'info'} onClick={() => changeTab('achievements')}>
+        <Button variant={tabValue === 'achievements' ? 'active' : 'second'} onClick={() => changeTab('achievements')}>
           <svg
-            width='1.5em'
-            height='1.5em'
+            width='1.8em'
+            height='1.8em'
             viewBox='0 0 16 16'
             className='bi bi-award-fill'
             fill='currentColor'
@@ -51,10 +51,10 @@ function Menu({ themeValue, tabValue, changeTab }) {
             <path d='M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z' />
           </svg>
         </Button>
-        <Button variant={themeValue === 'dark' ? 'dark' : 'info'} onClick={() => changeTab('logs')}>
+        <Button variant={tabValue === 'logs' ? 'active' : 'second'} onClick={() => changeTab('logs')}>
           <svg
-            width='1.5em'
-            height='1.5em'
+            width='1.8em'
+            height='1.8em'
             viewBox='0 0 16 16'
             className='bi bi-terminal-fill'
             fill='currentColor'
@@ -65,10 +65,10 @@ function Menu({ themeValue, tabValue, changeTab }) {
             />
           </svg>
         </Button>
-        <Button variant={themeValue === 'dark' ? 'dark' : 'info'} onClick={() => changeTab('credits')}>
+        <Button variant={tabValue === 'credits' ? 'active' : 'second'} onClick={() => changeTab('credits')}>
           <svg
-            width='1.5em'
-            height='1.5em'
+            width='1.8em'
+            height='1.8em'
             viewBox='0 0 16 16'
             className='bi bi-file-earmark-code-fill'
             fill='currentColor'
@@ -97,7 +97,6 @@ function Menu({ themeValue, tabValue, changeTab }) {
 
 const mapStateToProps = (state) => {
   return {
-    themeValue: state.theme.value,
     tabValue: state.menu.value,
   }
 }
