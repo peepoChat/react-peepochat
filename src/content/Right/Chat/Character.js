@@ -6,8 +6,8 @@ export default function Character() {
       <Card className='py-1 bg-second align-items-center'>
         <Card.Img
           variant='top'
-          style={{ width: '90%', transform: 'scale(-1, 1)' }}
-          src='https://cdn.betterttv.net/emote/5fa02a9c473f4802fe486934/3x'
+          style={{ width: '90%' }}
+          src='https://cdn.betterttv.net/emote/5fa8ddec4dfba1644029704d/3x'
         />
       </Card>
     </Col>
