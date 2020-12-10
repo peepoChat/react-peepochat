@@ -1,4 +1,4 @@
-const rumessages = [
+export const rumessages = [
   ' 123 ',
   ' аыва ',
   ' ))) ',

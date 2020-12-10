@@ -11,7 +11,7 @@ function Settings({ themeValue, changeTheme }) {
   return (
     <Card.Body className='menu-piece'>
       <Card.Title> - Settings - </Card.Title>{' '}
-      <Button variant={themeValue === 'dark' ? 'second' : 'second'} onClick={() => onTheme()} block>
+      <Button variant='second' onClick={() => onTheme()} block>
         - Change theme: {themeValue === 'dark' ? 'Dark' : 'Light'}
       </Button>
     </Card.Body>

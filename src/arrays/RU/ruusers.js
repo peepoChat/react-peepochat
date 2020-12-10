@@ -1,4 +1,4 @@
-const ruusers = [
+export const ruusers = [
   "trefis",
   "TimaFrolov",
   "cREAMket_",
