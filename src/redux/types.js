@@ -1,3 +1,4 @@
 export const CHANGE_THEME = 'CHANGE_THEME'
 export const CHANGE_TAB = 'CHANGE_TAB'
 export const CREATE_MESSAGE = 'CREATE_MESSAGE'
+export const MAKE_DAMAGE = 'MAKE_DAMAGE'
