@@ -5,15 +5,15 @@ import { ruusers } from '../../../arrays/RU/ruusers'
 import { rumessages } from '../../../arrays/RU/rumessages'
 import { nicknameColors } from '../../../arrays/Other/usercolors'
 
-function Enemy({ message, user, userColor, health, createMessage, makeDamage }) {
+function Enemy({ message, user, userColor, currentHealth, maxHealth, lastDamage, createMessage, makeDamage }) {
   function onMessage() {
-    const damage = Math.floor(Math.random() * 30)
+    const damage = Math.floor(Math.random() * 15) + 15
     makeDamage(damage)
-    if (health <= 0) {
+    if (currentHealth - damage <= 0) {
       const newUser = ruusers[Math.floor(Math.random() * ruusers.length)]
       const newMessage = rumessages[Math.floor(Math.random() * rumessages.length)]
       const newColor = nicknameColors[Math.floor(Math.random() * nicknameColors.length)]
-      const newHealth = 100
+      const newHealth = Math.floor(Math.random() * 100) + 50
       createMessage(newMessage, newUser, newColor, newHealth)
     }
   }
@@ -23,7 +23,12 @@ function Enemy({ message, user, userColor, health, createMessage, makeDamage }) 
       <Button variant='second' className='py-1 message' onClick={() => onMessage()} block>
         <b style={{ color: userColor }}> {user} </b>: {message}
       </Button>
-      <ProgressBar variant='danger' now={health} className='mt-1' />
+      <ProgressBar
+        variant='danger'
+        now={Math.floor((currentHealth / maxHealth) * 100)}
+        label={`${currentHealth} ${lastDamage !== 0 ? '( -' + lastDamage + ' )' : ' '}`}
+        className='mt-1'
+      />
     </Col>
   )
 }
@@ -33,7 +38,9 @@ const mapStateToProps = (state) => {
     message: state.message.message,
     user: state.message.user,
     userColor: state.message.userColor,
-    health: state.message.health,
+    currentHealth: state.message.currentHealth,
+    maxHealth: state.message.maxHealth,
+    lastDamage: state.message.lastDamage,
   }
 }
 

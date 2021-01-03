@@ -4,7 +4,9 @@ const initialState = {
   message: 'Добро пожаловать, еболыга =)',
   user: 'Creamket_',
   userColor: '#fdbd42',
-  health: 100,
+  currentHealth: 100,
+  maxHealth: 100,
+  lastDamage: 0,
 }
 
 export const messageReducer = (state = initialState, action) => {
@@ -15,12 +17,15 @@ export const messageReducer = (state = initialState, action) => {
         message: action.payload[0],
         user: action.payload[1],
         userColor: action.payload[2],
-        health: action.payload[3],
+        currentHealth: action.payload[3],
+        maxHealth: action.payload[3],
+        lastDamage: 0,
       }
     case MAKE_DAMAGE:
       return {
         ...state,
-        health: state.health - action.payload,
+        currentHealth: state.currentHealth - action.payload,
+        lastDamage: action.payload,
       }
     default:
       return state
