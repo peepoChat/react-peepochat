@@ -6,10 +6,16 @@
   box-shadow: none !important;
 }
 
+.progress {
+  background-color: #4646492c;
+  height: 20px;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   /* line-height: 1.5; */
   color: #efeff1;
+  font-size: 12px;
   overflow: hidden;
   background-color: #1c1c1c;
 }

@@ -1,9 +1,10 @@
-import { Col, Button, ProgressBar } from 'react-bootstrap'
+import { Col, Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { createMessage, makeDamage } from '../../../redux/actions'
 import { ruusers } from '../../../arrays/RU/ruusers'
 import { rumessages } from '../../../arrays/RU/rumessages'
 import { nicknameColors } from '../../../arrays/Other/usercolors'
+import Healthbar from './Enemy/Healthbar'
 
 function Enemy({ message, user, userColor, currentHealth, maxHealth, lastDamage, createMessage, makeDamage }) {
   function onMessage() {
@@ -23,12 +24,9 @@ function Enemy({ message, user, userColor, currentHealth, maxHealth, lastDamage,
       <Button variant='second' className='py-1 message' onClick={() => onMessage()} block>
         <b style={{ color: userColor }}> {user} </b>: {message}
       </Button>
-      <ProgressBar
-        variant='danger'
-        now={Math.floor((currentHealth / maxHealth) * 100)}
-        label={`${currentHealth} ${lastDamage !== 0 ? '( -' + lastDamage + ' )' : ' '}`}
-        className='mt-1'
-      />
+      <Healthbar now={Math.floor((currentHealth / maxHealth) * 100)}>{`${currentHealth} ${
+        lastDamage !== 0 ? '( -' + lastDamage + ' )' : ' '
+      }`}</Healthbar>
     </Col>
   )
 }
