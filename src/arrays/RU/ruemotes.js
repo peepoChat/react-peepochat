@@ -1,4 +1,4 @@
-const ru_emotes = new Map([
+export const ru_emotes = new Map([
   [
     ` PagMan `,
     `<IMG class="emote" SRC=https://cdn.frankerfacez.com/85/b2/85b2c255a2ffab2684c1714a311358ec.PNG align="middle" hspace="5">`,
@@ -401,7 +401,7 @@ const ru_emotes = new Map([
   ],
   [
     ` KEKVV `,
-    `<IMG class="emote" SRC=https://cdn.betterttv.net/emote/5ee239c7924aa35e32a7a1ef/1x align="middle" hspace="5">`,
+    `<IMG class="emote" SRC=https://cdn.betterttv.net/emote/5f6a1ace8d3e1b709d8e7db4/1x align="middle" hspace="5">`,
   ],
   [
     ` ICUPEPES `,
@@ -840,53 +840,38 @@ const ru_emotes = new Map([
     `<IMG class="emote" SRC=https://cdn.betterttv.net/emote/5e9d8af27e090362f8b0ce95/1x align="middle" hspace="5">`,
   ],
   [
-    "pwgoodGun",
+    'pwgoodGun',
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/303317027/1.0 align="middle" hspace="5">`,
   ],
   [
-    "pwgoodCheems",
+    'pwgoodCheems',
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/303130855/1.0 align="middle" hspace="5">`,
   ],
   [
-    "pwgoodDerp",
+    'pwgoodDerp',
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/302972832/1.0 align="middle" hspace="5">`,
   ],
   [
-    "pwgoodHey",
+    'pwgoodHey',
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/302529601/1.0 align="middle" hspace="5">`,
   ],
   [
-    "pwgoodCat",
+    'pwgoodCat',
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/300166768/1.0 align="middle" hspace="5">`,
   ],
-  [
-    ` <3 `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/555555584/1.0 align="middle" hspace="5">`,
-  ],
-  [
-    ` Kappa `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 align="middle" hspace="5">`,
-  ],
+  [` <3 `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/555555584/1.0 align="middle" hspace="5">`],
+  [` Kappa `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/25/1.0 align="middle" hspace="5">`],
   [
     ` Jebaited `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/114836/1.0 align="middle" hspace="5">`,
   ],
-  [
-    ` PogChamp `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/88/1.0 align="middle" hspace="5">`,
-  ],
-  [
-    ` LUL `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/425618/1.0 align="middle" hspace="5">`,
-  ],
+  [` PogChamp `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/88/1.0 align="middle" hspace="5">`],
+  [` LUL `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/425618/1.0 align="middle" hspace="5">`],
   [
     ` D: `,
     `<IMG class="emote" SRC=https://cdn.betterttv.net/emote/55028cd2135896936880fdd7/1x align="middle" hspace="5">`,
   ],
-  [
-    ` Keepo `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0 align="middle" hspace="5">`,
-  ],
+  [` Keepo `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0 align="middle" hspace="5">`],
   [
     ` SeemsGood `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/64138/1.0 align="middle" hspace="5">`,
@@ -895,10 +880,7 @@ const ru_emotes = new Map([
     ` CoolStoryBob `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/123171/1.0 align="middle" hspace="5">`,
   ],
-  [
-    ` SMOrc `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/52/1.0 align="middle" hspace="5">`,
-  ],
+  [` SMOrc `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/52/1.0 align="middle" hspace="5">`],
   [
     ` BibleThump `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/86/1.0 align="middle" hspace="5">`,
@@ -907,14 +889,8 @@ const ru_emotes = new Map([
     ` WutFace `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/28087/1.0 align="middle" hspace="5">`,
   ],
-  [
-    ` DansGame `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/33/1.0 align="middle" hspace="5">`,
-  ],
-  [
-    ` 4Head `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/354/1.0 align="middle" hspace="5">`,
-  ],
+  [` DansGame `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/33/1.0 align="middle" hspace="5">`],
+  [` 4Head `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/354/1.0 align="middle" hspace="5">`],
   [
     ` NotLikeThis `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/58765/1.0 align="middle" hspace="5">`,
@@ -923,14 +899,8 @@ const ru_emotes = new Map([
     ` ResidentSleeper `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/245/1.0 align="middle" hspace="5">`,
   ],
-  [
-    ` FailFish `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/360/1.0 align="middle" hspace="5">`,
-  ],
-  [
-    ` Kreygasm `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/41/1.0 align="middle" hspace="5">`,
-  ],
+  [` FailFish `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/360/1.0 align="middle" hspace="5">`],
+  [` Kreygasm `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/41/1.0 align="middle" hspace="5">`],
   [
     ` HeyGuys `,
     `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/30259/1.0 align="middle" hspace="5">`,
@@ -955,8 +925,5 @@ const ru_emotes = new Map([
     ` VisLaud `,
     `<IMG class="emote" SRC=https://cdn.betterttv.net/emote/550352766f86a5b26c281ba2/1x align="middle" hspace="5">`,
   ],
-  [
-    ` :\\) `,
-    `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/1/1.0 align="middle" hspace="5">`,
-  ],
-]);
+  [` :\\) `, `<IMG class="emote" SRC=https://static-cdn.jtvnw.net/emoticons/v1/1/1.0 align="middle" hspace="5">`],
+])

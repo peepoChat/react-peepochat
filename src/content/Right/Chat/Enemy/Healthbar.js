@@ -15,6 +15,7 @@ export default function Healthbar({ children, now }) {
       textAlign: 'center',
       justifyContent: 'center',
       height: '20px',
+      fontWeight: 600,
     },
   }
 
