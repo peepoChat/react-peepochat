@@ -1,6 +1,6 @@
 import { Col, Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
-import ReactHtmlParser from 'react-html-parser'
+import { Markup } from 'interweave'
 import { createMessage, makeDamage } from '../../../redux/actions'
 import { ruusers } from '../../../arrays/RU/ruusers'
 import { rumessages } from '../../../arrays/RU/rumessages'
@@ -52,7 +52,8 @@ function Enemy({ message, user, userColor, currentHealth, maxHealth, lastDamage,
   return (
     <Col xs={12}>
       <Button variant='second' className='py-1 message' onClick={() => onMessage()} block>
-        <b style={{ color: userColor }}> {user} </b>: {ReactHtmlParser(stringParsing(message, ru_emotes))}
+        <b style={{ color: userColor }}> {user} </b>:{' '}
+        <Markup content={stringParsing(message, ru_emotes)} noWrap={true} />
       </Button>
       <Healthbar now={Math.floor((currentHealth / maxHealth) * 100)}>{`${currentHealth} ${
         lastDamage !== 0 ? '( -' + lastDamage + ' )' : ' '
